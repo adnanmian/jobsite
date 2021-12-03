@@ -7,12 +7,15 @@ export default function UseLogin() {
         const [email, setEmail] = useState("");
         const [password, setPassword] = useState("");
         const  dispatch = useDispatch();
-        const doLoginUser = () =>{
-            dispatch(doLogin(email, password));
+        const data ={
+           Email: email,
+            Password:password
+            
         }
-        // const doLogoutUser = () =>{
-        //     dispatch(doLogout());
-        // }
+        const doLoginUser = () =>{
+            dispatch(doLogin(data));
+        }
+      
 
-    return[setEmail,setPassword,doLoginUser]
+    return[setEmail,setPassword,doLoginUser,email,password]
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Alert, Button, Card, Form } from "react-bootstrap";
+import {  Button, Card, Form } from "react-bootstrap";
 import { doSignUp } from '../../../store/actions/AuthAction';
 import { Link } from "react-router-dom";
 import UseSignUp from './UseSignup';

@@ -14,9 +14,11 @@ import LandingPage from '../modules/landingPage/LandingPage'
 import Profile from '../profile/Profile';
 import PrivateRoute from './PrivateRouting';
 import PublicRoute from './PublicRouting';
+import { useSelector } from 'react-redux';
 
 export default function Navigation() {
-    const authState = true;
+    const authState = useSelector(state => state.AuthReducer.isUserLoggedIn)
+ 
     return (
 
         <div>

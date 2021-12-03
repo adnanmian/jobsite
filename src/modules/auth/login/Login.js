@@ -3,13 +3,13 @@ import { Card,Form,Button } from 'react-bootstrap';
 import UseLogin from './UseLogin';
 
 function Login() {
-    const [setEmail, setPassword, doLoginUser] = UseLogin();
+    const [setEmail, setPassword, doLoginUser,email,password] = UseLogin();
     return (
         <div>
             <Card>
                 <Card.Body>
                   <center><h2>LOGIN</h2></center>  
-                    <Form>
+                    {/* <Form> */}
                         <Form.Group id="email">
                             <Form.Label>Email</Form.Label>
                             <Form.Control type="email" onChange={(e) => setEmail(e.target.value)} />
@@ -20,9 +20,10 @@ function Login() {
                             <Form.Label></Form.Label>
   </Form.Group>
   <Button type="submit" className="w-100" onClick={doLoginUser}>Login</Button>
-                    </Form>                      
+                    {/* </Form>                       */}
                 </Card.Body>  
-
+{email}
+{password}
             </Card>
         </div>
     );

@@ -2,6 +2,7 @@
 import { LOGIN,LOGOUT, SIGNUP } from "./Type";
 const initialState = {
     isUserLoggedIn: false,
+    user:null,
     email: null,
     password: null
 }
