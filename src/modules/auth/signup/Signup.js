@@ -12,7 +12,7 @@ function SignUp() {
                 <Card.Body >
                     <h2 className="text-center md-4">Sign Up</h2>
                     <Form>
-                        <Form.Group id="email">
+                        {/* <Form.Group id="email">
                             <Form.Label>Name</Form.Label>
                             <Form.Control type="text" value={name}  onChange={(e) => setName(e.target.value)} />
                         </Form.Group>
@@ -23,7 +23,7 @@ function SignUp() {
                                 <Form.Label>Phone</Form.Label>
                                 <Form.Control type="text" value={phone} onChange={(e) => setPhone(e.target.value)} />
                             </Form.Group>
-                        </Form.Group>
+                        </Form.Group> */}
                         <Form.Group>
                             <Form.Label>Email</Form.Label>
                             <Form.Control type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
